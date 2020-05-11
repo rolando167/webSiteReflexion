@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Comatible" content="IE-edge">
+	<meta name="viewport" content="width=device-with, initial-scale=1.0">
+	<title>Nature WebSite</title>
+	<link rel="shortcut icon" href="images/brand.png">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/Jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.fullpage.js"></script>
+	<!-- slider -->
+	<link rel="stylesheet" type="text/css" href="css/lightslider.css">
+	<script type="text/javascript" src="js/lightslider.js"></script>
+	<!-- font -->
+	<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div id="fullpage">
+		<!-- section 1 -->
+		<section>
+		<!-- navigation -->
+		<nav>
+			<!-- logo -->
+			<div class="logo">Perú</div>
+			<!-- right-menu -->
+			<div class="r-menu">
+				<!-- besite-design -->
+				<a href="#">Inicio</a>
+				<!-- sign in buton -->
+				<button>Contacto</button>
+
+			</div>
+		</nav>
+		<!-- text -->
+		<div class="text">
+			<!-- earth-heading -->
+			<div class="earth">
+				<span>P</span>
+				<span>E</span>
+				<span>R</span>
+				<span>Ú</span>
+			</div>
+			<!-- planet headin -->
+			<h1>PLANETA</h1>
+			<!-- button -->
+			<button>LEER MÁS</button>
+		</div>
+		<!-- social	 -->
+		<div class="social">
+			<!-- paragraph -->
+			<p>
+				Sígueme 
+			</p>
+			<!-- icons -->
+			<div class="social-icons">
+				<a href=""><i class="fab fa-facebook-f"></i></a>
+				<a href=""><i class="fa fa-twitter"></i></a>
+				<a href=""><i class="fab fa-instagram "></i></a>
+				<a href=""><i class="fab fa-youtube"></i></a>
+			</div>
+		</div>
+		</section>
+		<!-- section 2 -->
+		<section>
+			<!-- heading -->
+			<div class="explore-h">
+				<h1>Explora el Mundo</h1>
+				<!-- paragraph -->
+				<p>En estos tiempos de cuarentena, reflexiona y explora el mundo desde otro punto de vista para el futuro.</p>
+			</div>
+
+			<!-- box-container -->
+			<div class="box-container">
+				<ul id="autoWidth" class="cs-hidden">
+					<li class="item-a">
+						<!-- box 1 -->
+						<div class="box-1">
+							<p>FUERZA</p>
+						</div>
+					</li>
+					<li class="item-b">
+						<!-- box 2 -->
+						<div class="box-2">
+							<p>IMPONENTE</p>
+						</div>
+					</li>
+					 
+					<li class="item-c">
+						<!-- box 3 -->
+						<div class="box-3">
+							<p>DETALLES</p>
+						</div>
+					</li>
+				 
+					<li class="item-d">
+						<!-- box 4 -->
+						<div class="box-4">
+							<p>MOMENTOS</p>
+						</div>
+					</li>
+					
+					<li class="item-e">
+						<!-- box 5 -->
+						<div class="box-5">
+							<p>PAZ</p>
+						</div>
+					</li>
+
+				</ul>
+			</div>
+			<!-- footer -->
+			<footer>
+				<!-- copyright -->
+				<div class="copyright">
+					Copyright 2020
+				</div>
+				<!-- menu -->
+				<ul>
+					<li><a href="#">Inicio</a></li>
+					<li><a href="#">Contacto</a></li>
+				</ul>
+			</footer>
+		</section>
+	</div>
+	<script type="text/javascript">
+		// scroll script
+		$('#fullpage').fullpage();
+		// lightslider
+		$(document).ready(function() {
+			$('#autoWidth').lightSlider({
+				autoWidth:true,
+				loop:true,
+				onSliderLoad: function() {
+					$('#autoWidth').removeClass('cS-hidden');
+				} 
+			});  
+		  });
+	</script>
+</body>
+</html>
